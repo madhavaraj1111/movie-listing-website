@@ -1,0 +1,49 @@
+ /* font */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    font-family: "poppins",sans-serif;
+ }
+//  custom-color
+$custom-dark:#212121;
+
+//  gradient
+$white:#fff;
+$gradient: linear-gradient(180deg, rgba($white, .0), rgba($white, .10),rgba($white, .15));
+// custom spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
+
+// dropdown-menu
+$dropdown-min-width:                6rem;
+$dropdown-dark-bg:                  rgb(34, 34, 34);
+// dropdown-hover
+$link-hover-color:#ffffff;
+$dropdown-dark-link-hover-color:   $link-hover-color;
+$dropdown-dark-link-hover-bg:       rgba($white, .25);
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/bootstrap.scss";
+
+
+.card:hover{
+  
+  box-shadow: 0px 0px 15px #616161;
+}
